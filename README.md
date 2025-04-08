@@ -1,16 +1,16 @@
-# glowessence
+# Glow Essence
 
-Título ou Nome da aplicação: Glow Essence.
-Identificação/Autor: Ane Karine Gonçalves
-Descrição do projeto: Breve explicação sobre o tema e o escopo da API.
-Prototipação no Figma: https://www.figma.com/design/MP5tN7hqOsaHLsbPZT22aO/Untitled?node-id=0-1&p=f&t=WC7ZBAyvfGQCwbY1-0 
-Design System: Link para o documento que descreve o Design System da aplicação.
-Framework CSS: Bootstrap.
-Dependências: Lista das bibliotecas JavaScript utilizadas. 
-Link para o site em produção: URL para acessar o site publicado no GitHub Pages.
-Checklist de Funcionalidades: Uma lista de funcionalidades marcadas como concluídas (ou não) durante o desenvolvimento. 
-Instruções de Execução: Passos detalhados para configurar e executar a aplicação localmente.
-Telas da Aplicação: Imagens de algumas telas da aplicação. 
+### Título ou Nome da aplicação: Glow Essence.
+### Identificação/Autor: Ane Karine Gonçalves
+### Descrição do projeto: Breve explicação sobre o tema e o escopo da API.
+### Prototipação no Figma: https://www.figma.com/design/MP5tN7hqOsaHLsbPZT22aO/Untitled?node-id=0-1&p=f&t=WC7ZBAyvfGQCwbY1-0 
+### Design System: Link para o documento que descreve o Design System da aplicação.
+### Framework CSS: Bootstrap.
+### Dependências: Lista das bibliotecas JavaScript utilizadas. 
+### Link para o site em produção: URL para acessar o site publicado no GitHub Pages.
+### Checklist de Funcionalidades: Uma lista de funcionalidades marcadas como concluídas (ou não) durante o desenvolvimento. 
+### Instruções de Execução: Passos detalhados para configurar e executar a aplicação localmente.
+### Telas da Aplicação: Imagens de algumas telas da aplicação. 
 
 
 ## Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
