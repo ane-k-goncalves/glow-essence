@@ -1,0 +1,25 @@
+.navbar {
+  background-color: #fad4ef;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 100px;
+}
+
+#navbarNav {
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbarNavEnd {
+  display: flex;
+  justify-content: end;
+}
+
+.nav-item {
+ margin: 10px;
+ 
+}
+
+a {
+  margin: 20px;
+}
