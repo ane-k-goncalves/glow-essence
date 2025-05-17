@@ -9,13 +9,13 @@ p {
 
 .container {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
 }
 
 .end {
     display: flex;
     flex-direction: column;
-  
+    margin: 10px;
 
 }
