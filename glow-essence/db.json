@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "Andsfsfe",
+      "senha": "123"
+    },
+    {
+      "id": "db8c",
+      "email": "",
+      "password": "",
+      "nome": "",
+      "cpf": 0,
+      "endereco": "",
+      "cep": 0,
+      "cidade": ""
+    },
+    {
+      "id": "e194",
+      "email": "ane@gmail.com",
+      "password": "123",
+      "nome": "ane",
+      "cpf": 12321231,
+      "endereco": "129 Rua Barcelona",
+      "cep": 2312,
+      "cidade": "Guarapuava"
+    }
+  ]
+}
