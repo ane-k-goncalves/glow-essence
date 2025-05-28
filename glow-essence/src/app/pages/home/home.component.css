@@ -1,0 +1,19 @@
+.scroll-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 1rem; 
+    padding: 1rem;
+   
+}
+
+
+  .scroll-container::-webkit-scrollbar {
+    height: 2px;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 2px;
+  }
