@@ -12,12 +12,12 @@ export const routes: Routes = [
     path: 'app-cadastro',
     component: CadastroComponent,
   },
-  // {
-  //   path: "",
-  // component: LoginComponent
-  //},
   {
     path: '',
+    component: LoginComponent,
+  },
+  {
+    path: 'home',
     component: HomeComponent,
   },
   {

@@ -1,35 +1,107 @@
 <div class="container full-page">
-<div class="container">
+  <form (ngSubmit)="register()">
+  <div class="container">
     <h3>Dados pessoais</h3>
     <div class="input-group input-group-sm mb-3">
-        <input type="text" class="form-control" placeholder="Nome" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-      </div>
-      <div class="input-group input-group-sm mb-3">
-        <input  type="text" class="form-control" placeholder="CPF" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-      </div>
-      <div class="input-group input-group-sm mb-3">
-        <input  type="text" class="form-control" placeholder="Email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-      </div>
-      <h3>Endereço</h3>
-      <div class="input-group input-group-sm mb-3">
-        <input  type="text" class="form-control" placeholder="Endereço" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-      </div>
-      <div class="input-group input-group-sm mb-3">
-        <input  type="text" class="form-control" placeholder="CEP" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-      </div>
-      <div class="input-group input-group-sm mb-3">
-        <input  type="text" class="form-control" placeholder="Cidade/Estado" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-      </div>
-      <h3>Crie uma senha</h3>
-      <div class="input-group input-group-sm mb-3">
-        <input  type="text" class="form-control" placeholder="Senha" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-      </div>
-      <div class="input-group input-group-sm mb-3">
-        <input  type="text" class="form-control" placeholder="Confirmar senha" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-      </div>
+      <input
+        type="text"
+        [(ngModel)]="nome"
+        name="nome"
+        class="form-control"
+        placeholder="Nome"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm"
+        required
+      />
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <input
+        type="number"
+        [(ngModel)]="cpf"
+        name="cpf"
+        class="form-control"
+        placeholder="CPF"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm"
+        required
+      />
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <input
+        type="email"
+        [(ngModel)]="email"
+        name="email"
+        class="form-control"
+        placeholder="Email"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm"
+        required
+      />
+    </div>
+    <h3>Endereço</h3>
+    <div class="input-group input-group-sm mb-3">
+      <input
+        type="text"
+        [(ngModel)]="endereco"
+        name="endereco"
+        class="form-control"
+        placeholder="Endereço"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm"
+        required
+      />
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <input
+        type="number"
+        [(ngModel)]="cep"
+        name="cep"
+        class="form-control"
+        placeholder="CEP"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm"
+        required
+      />
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <input
+        type="text"
+        [(ngModel)]="cidade"
+        name="cidade"
+        class="form-control"
+        placeholder="Cidade/Estado"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm"
+        required
+      />
+    </div>
+    <h3>Crie uma senha</h3>
+    <div class="input-group input-group-sm mb-3">
+      <input
+        type="password"
+        [(ngModel)]="password"
+        name="password"
+        class="form-control"
+        placeholder="Senha"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm"
+        required
+      />
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <input
+        type="password"
+        [(ngModel)]="confirmPassword"
+        name="confirmPassword"
+        class="form-control"
+        placeholder="Confirmar senha"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm"
+        required
+      />
+    </div>
 
-      <button type="button" class="btn">Cadastrar</button>
-   
-
+    <button type="submit" class="btn">Cadastrar</button>
   </div>
+   </form>
 </div>
