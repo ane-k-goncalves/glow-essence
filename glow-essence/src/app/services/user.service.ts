@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 export interface User {
   id?: number;
@@ -20,7 +20,18 @@ export interface User {
 export class UserService {
   private api = 'http://localhost:3000/users';
 
+    private loggedUser = new BehaviorSubject<User | null>(null);
+  loggedUser$ = this.loggedUser.asObservable();
+
   constructor(private http: HttpClient) {}
+
+   setLoggedUser(user: User) {
+    this.loggedUser.next(user);
+  }
+
+  getLoggedUser(): User | null {
+    return this.loggedUser.value;
+  }
 
   getUsers(): Observable<User[]> {
     return this.http.get<User[]>(this.api);
