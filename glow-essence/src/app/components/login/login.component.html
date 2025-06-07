@@ -1,5 +1,8 @@
-<div class="container full-page">
-  <div class="container">
+<div class="container">
+  <section class="c-img">
+    <img src="glow.svg" />
+  </section>
+  <section class="form">
     <form (ngSubmit)="login()">
       <div class="input-group input-group-sm mb-3">
         <input
@@ -25,11 +28,12 @@
       </div>
 
       <button type="submit" class="btn btn-primary">Login</button>
+      <a routerLink="/app-cadastro">
+        <button type="button" class="btn">Cadastro</button>
+      </a>
     </form>
-    <a routerLink="/app-cadastro">
-      <button type="button" class="btn">Cadastro</button>
-    </a>
-
+   
     <router-outlet />
-  </div>
+  </section>
+ 
 </div>
