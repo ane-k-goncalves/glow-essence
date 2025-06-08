@@ -1,4 +1,29 @@
 .card-img-top {
+  width: 16rem;
+  height: 100px;
+}
+
+.card {
     width: 16rem;
+  }
+
+@media screen and (max-width: 971px) {
+  .card-img-top {
+    width: 14rem;
     height: 100px;
+  }
+  .card {
+    width: 14rem;
+  }
+}
+
+/* Telas pequenas (ex: celulares) */
+@media screen and (max-width: 720px) {
+  .card-img-top {
+    width: 14rem;
+    height: 100px;
+  }
+  .card {
+    width: 14rem;
+  }
 }

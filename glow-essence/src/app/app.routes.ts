@@ -17,7 +17,7 @@ export const routes: Routes = [
     component: LoginComponent,
   },
   {
-    path: 'home',
+    path: 'app-home',
     component: HomeComponent,
   },
   {

@@ -10,8 +10,7 @@ export interface User {
   cpf: number;
   endereco: string;
   cep: number;
-  cidade: string;
-  
+ 
 }
 
 @Injectable({
@@ -44,4 +43,8 @@ export class UserService {
   addUser(user: User): Observable<User> {
     return this.http.post<User>(this.api, user);
   }
+
+  updateUser(user: User): Observable<User> {
+  return this.http.put<User>(`${this.api}/${user.id}`, user);
+}
 }

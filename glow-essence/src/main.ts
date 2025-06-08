@@ -4,12 +4,13 @@ import { AppComponent } from './app/app.component';
 import { provideHttpClient } from '@angular/common/http';
 import { routes } from './app/app.routes';
 import { provideRouter } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 
 
 bootstrapApplication(AppComponent, {
   providers: [
     provideHttpClient(),
-    provideRouter(routes)  // ✅ isso fornece o HttpClient globalmente
+    provideRouter(routes)
   ],
 });
