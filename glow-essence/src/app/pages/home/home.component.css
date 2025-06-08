@@ -1,20 +1,60 @@
 .scroll-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    overflow-x: auto;
-    gap: 3rem; 
-    padding: 1rem;
-    flex-wrap: wrap;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 2px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
 }
 
 
-  .scroll-container::-webkit-scrollbar {
-    height: 2px;
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 900px;
+  max-height: calc(3 * 150px + 2rem);
+  overflow-y: auto;
+  justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 600px;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
   }
 
-  .scroll-container::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 2px;
+  .divider {
+  height: 2px;
+  background-color: #ccc;
+  margin: 1rem 8rem;
+}
+}
+
+/* Telas pequenas (ex: celulares) */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 300px;
+    grid-template-columns: 1fr; /* 1 coluna */
   }
+
+  .divider {
+  height: 2px;
+  background-color: #ccc;
+  margin: 1rem 10rem;
+}
+}
+
+.divider {
+  height: 2px;
+  background-color: #ccc;
+  margin: 1rem 10rem;
+}

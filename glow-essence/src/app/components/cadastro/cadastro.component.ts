@@ -17,7 +17,6 @@ export class CadastroComponent {
   email = '';
   endereco = '';
   cep = 0;
-  cidade = '';
   password = '';
   confirmPassword = '';
 
@@ -41,7 +40,7 @@ export class CadastroComponent {
           cpf: this.cpf,
           endereco: this.endereco,
           cep: this.cep,
-          cidade: this.cidade,
+        
         };
         this.userService.addUser(newUser).subscribe(() => {
           alert('Usuário cadastrado com sucesso!');

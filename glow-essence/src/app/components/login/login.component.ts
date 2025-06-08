@@ -25,8 +25,8 @@ export class LoginComponent {
       const user = users.find(u => u.password === this.password);
       if (user) {
         alert('Login realizado com sucesso!');
-         this.userService.setLoggedUser(users[0]);
-         this.router.navigate(['/home']);
+         this.userService.setLoggedUser(user);
+         this.router.navigate(['/app-home']);
       } else {
         alert('Email ou senha inválidos!');
       }

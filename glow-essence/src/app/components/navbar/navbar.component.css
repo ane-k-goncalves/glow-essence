@@ -1,8 +1,9 @@
-.navbar {
+.custom-navbar {
   background-color: #fad4ef;
-  border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   height: 100px;
+  position: relative; /* Essential for z-index to work correctly */
+  z-index: 1000;
 }
 
 #navbarNav {
@@ -16,10 +17,40 @@
 }
 
 .nav-item {
- margin: 10px;
- 
+  margin: 10px;
 }
 
 a {
   margin: 20px;
+}
+
+
+
+@media screen and (max-width: 971px) {
+  .collapse {
+  background-color: #fad4ef;
+  width: 200px; 
+  position: absolute;
+  left: 0;
+  top: 100%; 
+  box-shadow: 0 4px 8px rgba(112, 105, 105, 0.1); 
+  padding: 1rem; 
+  flex-direction: column;
+  border-bottom-right-radius: 15px;
+}
+}
+
+
+@media screen and (max-width: 720px) {
+ .collapse {
+  background-color: #fad4ef;
+  width: 200px; 
+  position: absolute;
+  left: 0;
+  top: 100%; 
+  box-shadow: 0 4px 8px rgba(112, 105, 105, 0.1); 
+  padding: 1rem; 
+  flex-direction: column;
+  border-bottom-right-radius: 15px;
+}
 }
