@@ -12,6 +12,15 @@
 ### Instruções de Execução: Passos detalhados para configurar e executar a aplicação localmente.
 ### Telas da Aplicação: Imagens de algumas telas da aplicação. 
 
+## Executar projeto
+
+
+- cd glow-essence / cd glow-essence
+- npm install
+- npx json-server --watch db.json
+- ng serve
+
+- localhost:4200
 
 ## Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
